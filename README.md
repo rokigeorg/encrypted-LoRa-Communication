@@ -88,19 +88,22 @@ The code should demostrate a way of using the LoRa Radio Technology for sending 
 You can help to improve the the code. 
 If you test this code and find any mistakes or have suggestions to improve the code or the instrctions in the README feel free to do the following steps. Also you can send me an e-mail if you have any questions. 
 
-1. Fork it! Click the 
-2. Create your feature branch: `git checkout -b my-new-feature`
+1. Fork it! Click the button in the top right
+2. Now Repository is forked in your github 
+3. Clone your fork `git clone <your/git/ssh/PATH>`
+3. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
 
-
-
 ## History
-TODO: Write history sure
+For my bachelor thesis I try to build a Low-cost-Gateway for a LoRa Network. Currently I am supported by the Labb - Laboratory for Biosignal Processing in Leipzig Germany. 
 ## Credits
-TODO: Write credits
+This repository consists partly of coped code from the following People.
+* Thomas Telkamp thomas@telkamp.eu creater of the [single Channel LoRaWan Gateway](https://github.com/tftelkamp/single_chan_pkt_fwd)
+* [RadioHead library](http://www.airspayce.com/mikem/arduino/RadioHead/)
+
 ## License
 TODO: Write license
 ]]></content>
