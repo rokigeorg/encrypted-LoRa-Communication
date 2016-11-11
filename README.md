@@ -106,6 +106,6 @@ This repository consists partly of coped code from the following People.
 
 ## License
 TODO: Write license
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
