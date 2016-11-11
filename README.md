@@ -38,10 +38,13 @@ The goal was to develop a Node to Gateway encrypted communiction with the LoRa t
 * RST - GPIO0 (pin #11)
 
 ## Dependencies
-### for the Arduino Uno
+### for the Node
 * AES library for Arduino - [download and instructions found here](http://spaniakos.github.io/AES/)
 
-### for 
+### for the Gateway
+* enable SPI -> check in  ```raspi-config``` on RPi 
+* WiringPi: to access GPIO -> install ```sudo apt-get install wiringpi see http://wiringpi.com ```
+* start program as root ```sudo ./main``
 
 ## Installation
 TODO: Describe the installation process
@@ -62,16 +65,7 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-##Wiring HopeRF RFM95 to the Raspberry Pi Model B
 
-* 3.3V - 3.3V (header pin #1) 
-* GND - GND (pin #6) 
-* MISO - MISO (pin #21) 
-* MOSI - MOSI (pin #19) 
-* SCK - CLK (pin #23) 
-* NSS - GPIO6 (pin #22) 
-* DIO0 - GPIO7 (pin #7) 
-* RST - GPIO0 (pin #11)
 
 
 ## History
