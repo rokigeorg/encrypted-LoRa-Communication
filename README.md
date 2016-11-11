@@ -3,7 +3,7 @@
 # encrypted LoRa Communication
 
 This repository includes code for an Adruino Uno and a Raspberry Pi Model B.
-The Arduino (Node) can send encrypted data to the Raspberry Pi (Gateway).
+The Arduino (Node) can send AES encrypted data to the Raspberry Pi (Gateway).
 
 
 ## Goal
@@ -36,6 +36,12 @@ The goal was to develop a Node to Gateway encrypted communiction with the LoRa t
 * NSS - GPIO6 (pin #22) 
 * DIO0 - GPIO7 (pin #7) 
 * RST - GPIO0 (pin #11)
+
+## Dependencies
+### for the Arduino Uno
+* AES library for Arduino - [download and instructions found here](http://spaniakos.github.io/AES/)
+
+### for 
 
 ## Installation
 TODO: Describe the installation process
