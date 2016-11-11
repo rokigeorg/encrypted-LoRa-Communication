@@ -68,13 +68,16 @@ The code requires the following software libraries.
 Please note the adjustable arguments 
 ```
 -f 868100000
- ``` specifizes the frequency
+ ``` 
+ specifizes the frequency
  ```
  -sf 7
- ``` specifizes the spreadig factor SF7
+ ``` 
+ specifizes the spreadig factor SF7
   ```
  -cr 5
- ``` specifizes the coding rate 4/5
+ ``` 
+ specifizes the coding rate 4/5
 
 
 
