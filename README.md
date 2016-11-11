@@ -7,7 +7,7 @@ The Arduino (Node) can send AES encrypted data to the Raspberry Pi (Gateway). Th
 
 
 ## Goal
-The goal was to develop a Node to Gateway encrypted communiction with the LoRa technolagy.
+The goal was to develop a Node to Gateway encrypted communiction with the LoRa Radio technolagy. (Not LoRaWan)
 
 
 ## Hardware 
@@ -53,7 +53,8 @@ The code requires the following software libraries.
 1. Clone this repository to your machine you will program the Arduino ```git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
 2. Wire up the Arduino with the first RFM95 LoRa Modul (see section Hardware Wiring)
 3. install AES library in arduino sketch Folder ``/Arduino/ libraries``  [instructions here](http://spaniakos.github.io/AES/)
-4. In this repository folder open `` `` 
+4. Back in our repository folder open ``arduino_Node``. There are two example sketches. Example 1 -> send NOT encrypted LoRa Packages , Example 2 -> send encrypted LoRa Packages (16 Bytes Payload size only)
+5. open  
 
 
  TODO: Describe the installation process
