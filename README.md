@@ -1,9 +1,9 @@
 <snippet>
   <content>
-# encrypted LoRa Communication
+# Encrypted LoRa Communication - Node to Gateway
 
 This repository includes code for an Adruino Uno and a Raspberry Pi Model B.
-The Arduino (Node) can send AES encrypted data to the Raspberry Pi (Gateway).
+The Arduino (Node) can send AES encrypted data to the Raspberry Pi (Gateway). The LoRa commincation parameters are adjustable. Default settings are LoRa Frequency 868,1 MHz, Spreading Factor SF7 and Coding Rate 4/5. LoRa Communication is possible encrypted and without encryption. Right now the encrypted LoRa payload is limited to 16 Bytes.
 
 
 ## Goal
@@ -11,7 +11,8 @@ The goal was to develop a Node to Gateway encrypted communiction with the LoRa t
 
 
 ## Hardware 
-* HopeRF RFM95 - Low Power Long Range Transceiver Module V1.0 (2x)
+The code functions with the following hardware components.
+* 2 x HopeRF RFM95 - Low Power Long Range Transceiver Module V1.0 
 * Raspberry Pi - Model B
 * Arduino Uno
 
@@ -37,17 +38,25 @@ The goal was to develop a Node to Gateway encrypted communiction with the LoRa t
 * DIO0 - GPIO7 (pin #7) 
 * RST - GPIO0 (pin #11)
 
-## Dependencies
+## Software Dependencies 
+The code requires the following software libraries.
 ### for the Node
 * AES library for Arduino - [download and instructions found here](http://spaniakos.github.io/AES/)
 
 ### for the Gateway
 * enable SPI -> check in  ```raspi-config``` on RPi 
-* WiringPi: to access GPIO -> install ```sudo apt-get install wiringpi see http://wiringpi.com ```
-* start program as root ```sudo ./main``
+* WiringPi: to access GPIO -> install ```sudo apt-get install wiringpi```
+* start program as root ``sudo ./main``
 
-## Installation
-TODO: Describe the installation process
+## Setup and Installation
+### for the Node
+1. Clone this repository to your machine you will program the Arduino ```git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
+2. Wire up the Arduino with the first RFM95 LoRa Modul (see section Hardware Wiring)
+3. install AES library in arduino sketch Folder ``/Arduino/ libraries``  [instructions here](http://spaniakos.github.io/AES/)
+4. In this repository folder open `` `` 
+
+
+ TODO: Describe the installation process
 What things you need to install the software and how to install them
 ```
 sudo apt-get install wiringpi
