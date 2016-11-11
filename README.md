@@ -63,11 +63,23 @@ The code requires the following software libraries.
 2. Wire up the Raspberry Pi with the second RFM95 LoRa Modul (see section Hardware Wiring)
 3. On the command line in our repository folder  ``$ cd RaspberryPi_Gateway``
 4. Compile the code via the Makefile ``$ make``
-5. Run the LoRa Radio Receiver ``$ sudo ./main -f 868100000 -sf 7 -cr 5``
+5. Run the LoRa Radio Receiver ``$ sudo ./main -f 868100000 -sf 7 -cr 5`` 
+
+Please note the adjustable arguments 
+```
+-f 868100000
+ ``` specifizes the frequency
+ ```
+ -sf 7
+ ``` specifizes the spreadig factor SF7
+  ```
+ -cr 5
+ ``` specifizes the coding rate 4/5
+
 
 
 ## Usage
-TODO: Write usage instructions
+The code should demostrate the usage of the LoRa Radio  
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
