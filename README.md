@@ -82,9 +82,13 @@ Please note the adjustable arguments
 
 
 ## Usage
-The code should demostrate the usage of the LoRa Radio  
+The code should demostrate a way of using the LoRa Radio Technology for sending data encrypted. Also it is a fast introduction to the LoRa Technology. 
+
 ## Contributing
-1. Fork it!
+You can help to improve the the code. 
+If you test this code and find any mistakes or have suggestions to improve the code or the instrctions in the README feel free to do the following steps. Also you can send me an e-mail if you have any questions. 
+
+1. Fork it! Click the 
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
