@@ -103,8 +103,7 @@ void loop() {
 
     // Send a message to rf95_server
     rf95.send(encryDataArrPtr, LORA_PHY_PAYLOAD_SIZE);
-
-    //rf95.send((uint8_t *) radiopacket, 20);
+    Serial.println ("Send Package") ;
 
     delay(10);
     rf95.waitPacketSent();

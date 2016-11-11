@@ -53,19 +53,19 @@ The code requires the following software libraries.
 1. Clone this repository to your machine you will program the Arduino ```git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
 2. Wire up the Arduino with the first RFM95 LoRa Modul (see section Hardware Wiring)
 3. install AES library in arduino sketch Folder ``/Arduino/ libraries``  [instructions here](http://spaniakos.github.io/AES/)
-4. Back in our repository folder open ``arduino_Node``. There are two example sketches. ```ex1_send_NOT_encryp_LoRaPackage``` -> send NOT encrypted LoRa Packages , ```ex2_send_encryp_LoRaPackage``` -> send encrypted LoRa Packages (16 Bytes Payload size only)
-5. open sketch ``ex2_send_encryp_LoRaPackage`` in the adruino IDE and upload it to the Uno  
+4. Download [Download RadioHead v1.59](https://cdn-learn.adafruit.com/assets/assets/000/031/670/original/RadioHead-1.59.zip?1460574831) and install the library in arduino sketch Folder ``/Arduino/ libraries`` . Reboot IDE.
+5. Back in our repository folder open ``$ cd arduino_Node && ls``. There are two example sketches. ```ex1_send_NOT_encryp_LoRaPackage``` -> send NOT encrypted LoRa Packages , ```ex2_send_encryp_LoRaPackage``` -> send encrypted LoRa Packages (16 Bytes Payload size only)
+6. open sketch ``cd ex2_send_encryp_LoRaPackage`` in the adruino IDE and upload it to the Uno  
+7. Node send LoRa packages now
+
+### for the Gateway
+1. Clone this repository to your Raspberry Pi ```git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
+2. Wire up the Raspberry Pi with the second RFM95 LoRa Modul (see section Hardware Wiring)
+3. On the command line in our repository folder  ``$ cd RaspberryPi_Gateway``
+4. Compile the code via the Makefile ``$ make``
+5. Run the LoRa Radio Receiver ``$ sudo ./main -f 868100000 -sf 7 -cr 5``
 
 
- TODO: Describe the installation process
-What things you need to install the software and how to install them
-```
-sudo apt-get install wiringpi
-```
-Bla
-```
-Give examples
-```
 ## Usage
 TODO: Write usage instructions
 ## Contributing
