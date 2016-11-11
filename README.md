@@ -19,13 +19,13 @@ The code requires the following software libraries.
 * RadioHead Library [link here](http://www.airspayce.com/mikem/arduino/RadioHead/)
 
 ### for the Gateway
-* enable SPI -> check in  ```raspi-config``` on RPi 
-* WiringPi: to access GPIO -> install ```sudo apt-get install wiringpi```
-* start program as root ``sudo ./main``
+* enable SPI -> check in  ```$ raspi-config``` on RPi 
+* WiringPi: to access GPIO -> install ```$ sudo apt-get install wiringpi```
+* start program as root ``$ sudo ./main``
 
 ## Setup and Installation
 ### for the Node
-1. Clone this repository to your machine you will program the Arduino ```git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
+1. Clone this repository to your machine you will program the Arduino ```$ git clone https://github.com/rokigeorg/encrypted-LoRa-Communication.git ``` 
 2. Wire up the Arduino with the first RFM95 LoRa Modul (see section Hardware Wiring)
 3. install AES library in arduino sketch Folder ``/Arduino/ libraries``  [instructions here](http://spaniakos.github.io/AES/)
 4. Download [Download RadioHead v1.59](https://cdn-learn.adafruit.com/assets/assets/000/031/670/original/RadioHead-1.59.zip?1460574831) and install the library in arduino sketch Folder ``/Arduino/ libraries`` . Reboot IDE.
@@ -95,6 +95,10 @@ If you test this code and find any mistakes or have suggestions to improve the c
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+
+## In progress
+The following features need to be implemeted
+* forward payload to server
 
 ## History
 For my bachelor thesis I try to build a Low-cost-Gateway for a LoRa Network. Currently I am supported by the Labb - Laboratory for Biosignal Processing in Leipzig Germany. 
