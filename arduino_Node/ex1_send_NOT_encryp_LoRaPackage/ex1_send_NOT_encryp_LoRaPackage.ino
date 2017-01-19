@@ -73,7 +73,7 @@ void loop() {
     //=======================send LoRa Package =====================================
 
     // Send a message to rf95_server
-    rf95.send(radiopacket, LORA_PHY_PAYLOAD_SIZE);
+    rf95.send((byte*)radiopacket, LORA_PHY_PAYLOAD_SIZE);
 
     //rf95.send((uint8_t *) radiopacket, 20);
 
